@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zanjan</title>
+
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <link href='http://www.fontonline.ir/css/BZar.css' rel='stylesheet' type='text/css'>
+    <link href='http://www.fontonline.ir/css/BTitrBold.css' rel='stylesheet' type='text/css'>
+    <link href='http://www.fontonline.ir/css/BYagut.css' rel='stylesheet' type='text/css'>
+    <link href='http://www.fontonline.ir/css/BNazanin.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body  id="body" style="background: linear-gradient(180deg, rgb(43,88,118) 10%, rgb(78,67,118) 90%);height: 100vh;margin: 0;position: relative">
+
+<div id="mainDiv" style="background: #f4f4f4;width: 80vw;height: 45vw;float: left;position: absolute;margin: auto;top: 0;bottom: 0;right: 0;left: 0;border-radius: 1.5vh;box-shadow: 0px 4px 16px #454545">
+
+    <div id="photoCont" style="width: 50%;float: left;height: 100%;text-align: center">
+
+        <img id="mainImg" src="images/img1.jpg" style="width: 90%;height: 45%;border-radius: 1vh;margin-top: 3.5%;margin-bottom: 2%">
+        <div id="mapDiv" style="width: 90%;height: 46%;margin: auto;border-radius: 1vh;border: #8f8f8f solid 1px"></div>
+
+    </div>
+
+    <div id="textCont" style="width: 50%;float: right;height: 100%;position: relative">
+
+        <h2 id="title" style="font-family: BTitrBold;margin-top: 2vw;margin-right: 5%;margin-left: 5%;margin-bottom: 0;font-size: 2vw;direction: rtl">گنبد سلطانیه</h2>
+
+        <p id="explain" style="font-family: BNazanin;margin-right: 5%;margin-left: 5%;direction: rtl;line-height: 2vw;margin-top: 1vw;font-size: 1.5vw"> گنبد سلطانیه آرامگاه اُلجایتو است که بین سال‌های ۱۳۰۲ تا ۱۳۱۲ میلادی به دستور او در شهر سلطانیه (پایتخت ایلخانیان) ساخته شد و از آثار مهم معماری ایرانی و اسلامی به ‌شمار می‌رود. گنبد سلطانیه در فهرست آثار میراث جهانی به ثبت رسیده ‌است. گنبد این بنا سومین گنبد بزرگ جهان بعد از گنبد کلیسای سانتا ماریا دل فیوره، و گنبد مسجد ایاصوفیه است.<br> گنبد مزبور در پنج فرسخی سمت شرقی شهر زنجان در داخل باروی شهر قدیم سلطانیه قرار گرفته و بنایی است هشت ضلعی که طول هر ضلع آن ۸۰ گز است. هشت مناره نیز در اطراف گنبد دارد؛ و قدیمی‌ترین گنبد دوپوش موجود در ایران است.</p>
+
+        <div style="width: 90%;height: min-content;margin: auto;bottom: 0;right: 0;left: 0;margin-right: 7%;margin-bottom: 1.5vw;position: absolute;text-align: center">
+
+            <button onclick="changeTheme()" style="width: 5.5vw;height: 3vw;font-size: 1vw;border-radius: 1vw;outline: none;background: #cfd8dc;margin-right: 1vw;top: 50%;transform: translateY(-50%)">Theme</button>
+
+            <button onclick="changeLang()" style="width: 5.5vw;height: 3vw;font-size: 1vw;border-radius: 1vw;outline: none;background: #cfd8dc;margin-right: 2.5vw;top: 50%;transform: translateY(-50%)">Language</button>
+
+            <img id="imgPause" onclick="pausePlay()" src="images/pause.png" style="width: 3.5vw;height: 3.5vw;margin-right: 1.5vw">
+
+            <img id="prevBtn" onclick="prevClick()" src="images/left.png" style="width: 2.5vw;height: 2.5vw;border-radius: 0.7vw;background: #cfd8dc;padding: 0.5vw">
+            <span id="counter" style="font-family: BNazanin;margin-right: 2%;margin-left: 2%;font-size: 2vw">1 / 6</span>
+            <img id="nextBtn" onclick="nextClick()" src="images/right.png" style="width: 2.5vw;height: 2.5vw;border-radius: 0.7vw;background: #cfd8dc;padding: 0.5vw">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="sample_script.js"></script>
+</body>
+</html>
